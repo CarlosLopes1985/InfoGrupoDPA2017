@@ -10,6 +10,7 @@
   
   <!-- Materialize CSS-->
   <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/custom.css">
   
   <!--Jquery-->
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -121,8 +122,8 @@
 
 
 <div class="row">
-  <div class="col s12">
-    <div class="card hoverable col s8 offset-s3">
+  <div class="container right">
+    <div class="card hoverable col s12 m12 l11">
       <div class="card-content black-text">
         <span class="card-title">Jogos Cadastrados</span>
 
@@ -205,7 +206,7 @@
   </div>
   
   </div>
- <br><br><br><br><br><br>
+
   
   
   
