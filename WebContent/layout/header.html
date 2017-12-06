@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width,initial-scale=1.0">
+<title> TCC </title>
+<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Materialize CSS-->
+<link rel="stylesheet" href="css/materialize.css">
+</head>
+
+<body>
+<div class="navbar-fixed">
+  <nav class="#263238 blue-grey darken-5">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Logo</a>
+      <a href='#' data-activates="menu-mobile" class="button-collapse right">
+      <i class="material-icons">menu</i> </a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="active">Home</a></li>
+        <li><button data-target="modal1" class="btn modal-trigger">Entrar</button></li>
+        <li><a href="collapsible.html">Cadastrar</a></li>
+      </ul>
+      </div>
+
+  </nav>
+</div>
+<!-- MEnu Mobile-->
+  <ul id="menu-mobile" class="side-nav">
+        <li><a href="sass.html">Home</a></li>
+        <li><li><button data-target="modal1" class="btn modal-trigger">Entrar</button></li></li>
+        <li><a href="collapsible.html">Cadastrar</a></li>
+      </ul>
+     
+
+
+      <!-- Modal Trigger -->
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+
+    <div class="modal-content">
+
+      <nav class="#263238 blue-grey darken-5">
+      <h4 class="center">Login</h4>
+      </nav>
+      
+
+      <div class="row">
+          <div class="input-field col s4 offset-s4">
+            <input id="email" type="email" class="validate" required>
+            <label for="email" data-error="Email Inválido" data-success="Email Válido">Email</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4 offset-s4">
+            <input id="password" type="password" class="validate">
+            <label for="password">Senha</label>
+          </div>
+        </div>
+        
+
+      
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat #263238 blue-grey darken-8">Logar</a>
+    </div>
+  </div>
+
+
+
+
+   
+
+
+<!--Jquery-->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Materialize JS-->
+<script src="js/materialize.js"></script>
+
+<script>
+//menu mobile
+  $(".button-collapse").sideNav();
+</script>
+
+<script>
+ $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+</script>
+
+</body>
+</html>
